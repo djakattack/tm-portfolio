@@ -1,4 +1,3 @@
-@import "reset";
 @import "config";
 
 html {
@@ -11,7 +10,8 @@ html {
 
 body {
     // @include background;
-    background: url(../img/background.jpeg);
+    // background: url(../img/background.jpeg);
+    background: $primary-color;
     color: #fff;
     height: 100%;
     margin: 0;

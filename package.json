@@ -1,14 +1,17 @@
 {
   "name": "tm-portfolio",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/djakattack/tm-portfolio.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -17,7 +20,5 @@
   "homepage": "https://github.com/djakattack/tm-portfolio#readme",
   "dependencies": {
     "node-sass": "^9.0.0"
-  },
-  "keywords": [],
-  "description": ""
+  }
 }
