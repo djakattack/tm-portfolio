@@ -9,9 +9,14 @@ html {
 }
 
 body {
+    // background: 
+    // linear-gradient(
+    //     to right,
+    //     rgba($primary-color, 0.90),
+    //     rgba($primary-color, 0.25)
+    // ),
+    // url('../img/IMG_3368.jpeg') center top;
     // @include background;
-    // background: url(../img/background.jpeg);
-    background: $primary-color;
     color: #fff;
     height: 100%;
     margin: 0;
