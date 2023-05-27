@@ -1,7 +1,6 @@
 {
   "name": "tm-portfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
@@ -18,5 +17,7 @@
   "homepage": "https://github.com/djakattack/tm-portfolio#readme",
   "dependencies": {
     "node-sass": "^9.0.0"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }
