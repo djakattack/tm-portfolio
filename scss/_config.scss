@@ -1,23 +1,41 @@
 $primary-color: #444; 
 $secondary-color: #6EA3DB;
 $show-home-image: true;
-$home-image: url('../img/IMG_3368.jpeg');
-$background-opacity: 0.9;
+$home-image: url('../img/banner.jpeg');
+$background-opacity: 0.75;
 
 @mixin easeOut {
-    transition: all 1.5s ease-out;   
+    transition: all 0.25s ease-out;   
 }
 
 @mixin background {
     @if $show-home-image {
-        &#bg-img {
-            background: 
-            linear-gradient(
-                to right,
-                rgba($primary-color, 0.90),
-                rgba($primary-color, 0.25)
-            ),
-            url('../img/IMG_3368.jpeg') center top;
+        background: 
+            $home-image center top,
+            linear-gradient(to right,
+            rgba($primary-color, 0.90),
+            rgba($primary-color, 0.25)
+        );
+        background-attachment: fixed;
+        background-size: cover no-repeat;
+        &:after {
+            content: '';
+            position:absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($primary-color, $background-opacity);
+            z-index: -1;
         }
+        // .overlay {
+        //     position: absolute;
+        //     top: 0;
+        //     right: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     background: rgba($primary-color, $background-opacity);
+        //     z-index: -1;
+        // }
     }
 }
