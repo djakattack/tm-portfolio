@@ -1,10 +1,24 @@
-.menu-bt {
+.menu-btn {
   position: absolute;
   z-index: 3;
   right: 35px;
   top: 35px;
   cursor: pointer;
   transition: all 0.25s ease-out; }
+  .menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #FEFEFE;
+    transition: all 0.25s ease-out; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      opacity: 0; }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px); }
 
 html {
   font-size: 10px; }
@@ -14,7 +28,7 @@ html {
 
 body {
   background-color: #444;
-  background: url("../img/banner.jpeg") center top, linear-gradient(to right, rgba(68, 68, 68, 0.9), rgba(68, 68, 68, 0.25));
+  background: url("../img/IMG_0820.jpeg") center top, linear-gradient(to right, rgba(68, 68, 68, 0.9), rgba(68, 68, 68, 0.25));
   background-attachment: fixed;
   background-size: cover no-repeat;
   background-size: cover no-repeat;
