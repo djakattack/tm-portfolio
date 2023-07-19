@@ -90,6 +90,34 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav, div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show, div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: trnaslate3d(-100%, 0, 0); }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      background: url("../dist/img/IMG_X81.jpg");
+      width: 150px;
+      height: 150px; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
+
 html {
   font-size: 10px; }
 
@@ -100,7 +128,6 @@ body {
   background-color: #444;
   background: url("../img/IMG_0820.jpeg") center top, linear-gradient(to right, rgba(68, 68, 68, 0.9), rgba(68, 68, 68, 0.25));
   background-attachment: fixed;
-  background-size: cover no-repeat;
   background-size: cover no-repeat;
   color: #fff;
   height: 100%;

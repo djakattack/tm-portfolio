@@ -1,0 +1,54 @@
+// WIDESCREENS
+@include mediaXl {
+    
+}
+
+// DESKTOPS AND LAPTOPS
+@include mediaLg {
+
+}
+
+// TABLETS AND SMALL LAPTOPS
+@include mediaMd {
+    main {
+        align-items: center;
+        text-align: center; 
+        
+        .lg-heading {
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+    }
+
+    ul.menu-nav, div.menu-branding {
+        float: none;
+        width: 100%;
+        min-height: 0;
+        &.show{
+            transform: translate3d(0,0,0);
+        }
+    }
+
+    .menu-nav{
+        height: 75vh;
+        transform: trnaslate3d(-100%,0,0);
+    }
+
+    .menu-branding {
+        height: 25vh;
+        transform: translate3d(100%,0,0);
+
+        .portrait{
+            background: url('../dist/img/IMG_X81.jpg');
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
+
+// PHONES
+@include mediaSm {
+    main#home h1 {
+        margin-top: 10vh;
+    }
+}
